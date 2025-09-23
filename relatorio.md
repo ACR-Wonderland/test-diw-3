@@ -1,46 +1,46 @@
 # Relatório de Desempenho - Portal de Notícias Dinâmico
-<sup>Este é um feedback gerado por IA e pode conter erros. Você tem <autograder.builder.template_library.templates.web_dev.WebDevTemplate object at 0x7fd30cb6cee0> créditos restantes.</sup>
+<sup>Este é um feedback gerado por IA e pode conter erros. Você tem <autograder.builder.template_library.templates.web_dev.WebDevTemplate object at 0x7f9997a60ee0> créditos restantes.</sup>
 
 Olá, **ArthurCRodrigues**! Aqui está um feedback detalhado sobre sua atividade.
 > **Nota Final:** **`68.38 / 100`**
 ---
-# Feedback do Código
+# Feedback sobre o seu Código
 
-Olá! Estou aqui para te ajudar a melhorar seu código. Parabéns pelo trabalho até agora e pela iniciativa de aprender mais sobre programação! 
+Olá! Espero que esteja tudo bem com você. Parabéns pelo seu esforço em criar este portal de notícias! Você fez um ótimo trabalho, especialmente na manipulação dinâmica do DOM para renderizar o conteúdo das notícias e na implementação da leitura dos parâmetros da URL na página de detalhes. Além disso, é bom ver que todos os elementos de imagem contêm o atributo 'alt', o que é uma ótima prática para a acessibilidade.
 
-Vamos começar falando sobre o que foi bem feito no seu projeto e, em seguida, vou te dar algumas dicas de como melhorar nos pontos que precisam de atenção.
+No entanto, existem algumas melhorias que podem ser feitas para atender aos requisitos do projeto e melhorar ainda mais o seu código. Vamos passar por elas:
 
-## Pontos Positivos
+## Melhorias Críticas
 
-- Ótimo trabalho utilizando JavaScript puro para manipular o DOM! Você conseguiu carregar dinamicamente o conteúdo das notícias a partir dos dados no `app.js`, tanto na página inicial quanto nos detalhes. Isso é uma habilidade muito importante e você a aplicou muito bem.
-- Seu código JavaScript está bem estruturado e fácil de entender. A organização dos dados em um array de objetos e o uso do método `forEach` para iterar por eles estão corretos.
-- Parabéns por usar o objeto `URLSearchParams` para ler o parâmetro 'id' da URL na página de detalhes da notícia. Isso é uma prática avançada e você fez isso corretamente.
-- Você fez um bom trabalho garantindo que todas as imagens tenham um texto alternativo. Isso é muito importante para a acessibilidade e SEO.
-- Seu código HTML está bem estruturado e fácil de ler. Parabéns por isso!
-- A estrutura de arquivos e diretórios está organizada e faz sentido.
+1. **Tags `<article>` e `<img>` faltantes**: Os testes estão procurando por um número específico de tags `<article>` e `<img>`. Certifique-se de ter a quantidade correta dessas tags em seu HTML.
 
-## Pontos de Atenção e Sugestões de Melhoria
+2. **Links internos para tags `<article>`**: Os testes estão procurando links internos que apontam para tags `<article>`. Verifique se você tem a quantidade correta desses links.
 
-- Observo que alguns testes falharam porque estavam esperando o uso do Bootstrap, mas o enunciado do exercício especificava que o uso de frameworks é proibido. Portanto, você fez certo em não usar o Bootstrap. No entanto, é importante ler atentamente os requisitos dos testes para evitar confusões. 
+3. **Uso de medidas relativas no CSS**: Seu CSS deve usar unidades relativas (como em, rem, %, vh, vw) para medidas. Isso torna o layout mais flexível e adaptável a diferentes tamanhos de tela.
 
-- Seu CSS está usando seletores de ID, o que não é uma boa prática. Os IDs são únicos e não podem ser reutilizados, o que limita a eficiência do seu CSS. Tente usar classes em vez de IDs sempre que possível.
+4. **Links internos e classes CSS faltantes**: Os testes estão procurando por um número específico de links internos e classes CSS em seu código. Por favor, verifique se eles estão presentes e corretos.
 
-- Percebi que você tem uma pasta 'imgs' referenciada no seu código JavaScript, mas ela não existe no seu projeto. Isso está causando um erro, pois o código não consegue encontrar as imagens das notícias. Certifique-se de que todas as pastas e arquivos referenciados no seu código existem e estão no local correto.
+5. **Links para a página de detalhes**: Os testes estão procurando por links que apontam para 'detalhes.html' com o parâmetro de consulta 'id'. Certifique-se de que esses links estão presentes e corretos.
 
-- Você precisa adicionar mais tags `article` e `img` no seu HTML. Atualmente, você tem apenas 2 tags `article` e 0 tags `img`, mas os testes requerem 4 de cada. Lembre-se de que cada notícia deve ser um `article` e deve conter uma `img`.
+## Melhorias Adicionais
 
-- As regras do CSS devem preferencialmente usar unidades relativas (como em, rem, %, vh, vw), em vez de unidades absolutas (como px). Isso torna seu design mais flexível e responsivo a diferentes tamanhos de tela e configurações de usuário.
+1. **Uso excessivo de IDs**: Tente limitar o uso de IDs em seu CSS. Eles têm uma especificidade muito alta, o que pode tornar o seu CSS difícil de gerenciar à medida que o projeto cresce.
 
-- Por fim, certifique-se de que cada notícia na página inicial tenha um link para a página de detalhes com o parâmetro 'id' correto na query string da URL. Atualmente, os testes não estão encontrando esses links.
+2. **Uso de tags `<script>`**: A tag `<script>` foi encontrada em seu código. Como este projeto proíbe o uso de frameworks de JavaScript, você não deve precisar dessa tag.
 
-Aqui estão alguns recursos que podem te ajudar a melhorar seu código:
+3. **Diretório 'imgs' faltante**: Os testes não conseguiram encontrar o diretório 'imgs'. Certifique-se de que ele existe e contém todas as imagens necessárias para o projeto.
 
-- [Manipulação do DOM (Document Object Model) para criar conteúdo dinâmico](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-- [Como usar URLSearchParams para ler parâmetros da query string da URL](https://developer.mozilla.org/pt-BR/docs/Web/API/URLSearchParams)
-- [Como trabalhar com a estrutura de dados JSON em JavaScript](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
-- [Como usar o atributo 'alt' em imagens para acessibilidade](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img)
+## Recursos para Aprendizado
 
-Continue assim e você vai longe! Se tiver alguma dúvida, estou à disposição. Happy coding! 🚀
+Aqui estão alguns recursos que podem ajudar você a entender e corrigir os problemas mencionados:
+
+- [Guia sobre Manipulação do DOM (Document Object Model) para criar conteúdo dinâmico](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
+- [Tutorial sobre como usar URLSearchParams para ler parâmetros da query string da URL](https://developer.mozilla.org/pt-BR/docs/Web/API/URLSearchParams)
+- [Aprenda a trabalhar com a estrutura de dados JSON em JavaScript](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
+- [Guia completo sobre como usar o atributo 'alt' em imagens para acessibilidade](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img)
+
+Espero que isso ajude! Continue praticando e não hesite em pedir ajuda se precisar. Você está indo muito bem e estou ansioso para ver o seu progresso! 👍
+
 
 ---
 
