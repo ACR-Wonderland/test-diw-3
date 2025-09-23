@@ -194,7 +194,11 @@
                             },
                             {
                                 "file": "all",
-                                "name": "has_no_js_framework"
+                                "name": "has_no_js_framework",
+                                "calls": [
+                                    ["index.html","app.js"],
+                                    ["detalhes.html","app.js"]
+                                ]
                             }
                         ]
                     }
