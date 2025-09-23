@@ -1,45 +1,43 @@
 # Relatório de Desempenho - Portal de Notícias Dinâmico
-<sup>Este é um feedback gerado por IA e pode conter erros. Você tem <autograder.builder.template_library.templates.web_dev.WebDevTemplate object at 0x7f9997a60ee0> créditos restantes.</sup>
+<sup>Este é um feedback gerado por IA e pode conter erros. Você tem <autograder.builder.template_library.templates.web_dev.WebDevTemplate object at 0x7f2e9bff8f10> créditos restantes.</sup>
 
 Olá, **ArthurCRodrigues**! Aqui está um feedback detalhado sobre sua atividade.
 > **Nota Final:** **`68.38 / 100`**
 ---
-# Feedback sobre o seu Código
+# Feedback do Código
 
-Olá! Espero que esteja tudo bem com você. Parabéns pelo seu esforço em criar este portal de notícias! Você fez um ótimo trabalho, especialmente na manipulação dinâmica do DOM para renderizar o conteúdo das notícias e na implementação da leitura dos parâmetros da URL na página de detalhes. Além disso, é bom ver que todos os elementos de imagem contêm o atributo 'alt', o que é uma ótima prática para a acessibilidade.
+Olá! Acabei de revisar o seu código e gostaria de parabenizá-lo pelo trabalho feito até agora! 👏 Você fez um ótimo trabalho ao implementar a funcionalidade de carregar dinamicamente as notícias na página principal e os detalhes da notícia em uma página separada. Isso é uma parte fundamental do projeto e você fez isso muito bem!
 
-No entanto, existem algumas melhorias que podem ser feitas para atender aos requisitos do projeto e melhorar ainda mais o seu código. Vamos passar por elas:
+Agora, vamos abordar alguns pontos que precisam de atenção. Não se preocupe, estou aqui para ajudar!
 
-## Melhorias Críticas
+## Pontos a serem melhorados
 
-1. **Tags `<article>` e `<img>` faltantes**: Os testes estão procurando por um número específico de tags `<article>` e `<img>`. Certifique-se de ter a quantidade correta dessas tags em seu HTML.
+1. **Tags `<article>`**: O teste de validação apontou que você não está usando a quantidade necessária de tags `<article>`. No seu código, você está usando apenas duas tags `<article>`, uma para cada página. O teste espera pelo menos quatro. Isso pode ser facilmente resolvido adicionando mais tags `<article>` na sua página. Lembre-se que a tag `<article>` é usada para encapsular um conteúdo independente dentro de um documento.
 
-2. **Links internos para tags `<article>`**: Os testes estão procurando links internos que apontam para tags `<article>`. Verifique se você tem a quantidade correta desses links.
+2. **Tags `<img>`**: O teste de validação também apontou que você não está usando a quantidade necessária de tags `<img>`. No seu código, você não está usando nenhuma tag `<img>`. O teste espera pelo menos cinco. Você pode solucionar isso adicionando tags `<img>` para as imagens das notícias tanto na página inicial quanto na página de detalhes.
 
-3. **Uso de medidas relativas no CSS**: Seu CSS deve usar unidades relativas (como em, rem, %, vh, vw) para medidas. Isso torna o layout mais flexível e adaptável a diferentes tamanhos de tela.
+3. **Links internos**: O teste de validação mostrou que você não está usando links internos em seu projeto. Os links internos são importantes para a navegação do usuário no site. Você pode adicionar links internos usando a tag `<a>` com o atributo `href` apontando para a página interna desejada.
 
-4. **Links internos e classes CSS faltantes**: Os testes estão procurando por um número específico de links internos e classes CSS em seu código. Por favor, verifique se eles estão presentes e corretos.
+4. **Classe CSS**: O teste de validação indicou que algumas classes CSS esperadas não estão presentes no seu projeto. Certifique-se de usar as classes CSS corretas para estilizar os elementos do seu site. 
 
-5. **Links para a página de detalhes**: Os testes estão procurando por links que apontam para 'detalhes.html' com o parâmetro de consulta 'id'. Certifique-se de que esses links estão presentes e corretos.
+5. **Uso de ID**: O teste de validação apontou um excesso de uso de seletores de ID no seu CSS. O uso excessivo de seletores de ID pode tornar o seu CSS difícil de gerenciar e não é uma boa prática. Tente usar classes em vez de IDs sempre que possível.
 
-## Melhorias Adicionais
+6. **Diretório 'imgs' não encontrado**: O teste de validação indicou que o diretório 'imgs' não existe. Certifique-se de que você tenha criado este diretório e que ele contém todas as imagens que você pretende usar no seu site.
 
-1. **Uso excessivo de IDs**: Tente limitar o uso de IDs em seu CSS. Eles têm uma especificidade muito alta, o que pode tornar o seu CSS difícil de gerenciar à medida que o projeto cresce.
+## Boas práticas
 
-2. **Uso de tags `<script>`**: A tag `<script>` foi encontrada em seu código. Como este projeto proíbe o uso de frameworks de JavaScript, você não deve precisar dessa tag.
+Você fez um excelente trabalho garantindo que todas as imagens tenham o atributo 'alt'. Isso é essencial para a acessibilidade do site e é uma ótima prática! 👍
 
-3. **Diretório 'imgs' faltante**: Os testes não conseguiram encontrar o diretório 'imgs'. Certifique-se de que ele existe e contém todas as imagens necessárias para o projeto.
+Também aprecio o fato de que você forneceu detalhes completos nas tags `<head>` de suas páginas HTML. Isso é muito importante para a otimização de mecanismos de busca (SEO) e para fornecer informações relevantes ao navegador.
 
-## Recursos para Aprendizado
+Para melhorar ainda mais, aqui estão alguns recursos úteis que você pode consultar:
 
-Aqui estão alguns recursos que podem ajudar você a entender e corrigir os problemas mencionados:
+- [Manipulação do DOM (Document Object Model)](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
+- [Como usar URLSearchParams para ler parâmetros da query string da URL](https://developer.mozilla.org/pt-BR/docs/Web/API/URLSearchParams)
+- [Trabalhando com a estrutura de dados JSON em JavaScript](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
+- [Como usar o atributo 'alt' em imagens para acessibilidade](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img)
 
-- [Guia sobre Manipulação do DOM (Document Object Model) para criar conteúdo dinâmico](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-- [Tutorial sobre como usar URLSearchParams para ler parâmetros da query string da URL](https://developer.mozilla.org/pt-BR/docs/Web/API/URLSearchParams)
-- [Aprenda a trabalhar com a estrutura de dados JSON em JavaScript](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
-- [Guia completo sobre como usar o atributo 'alt' em imagens para acessibilidade](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img)
-
-Espero que isso ajude! Continue praticando e não hesite em pedir ajuda se precisar. Você está indo muito bem e estou ansioso para ver o seu progresso! 👍
+Espero que essas sugestões sejam úteis! Continue trabalhando duro e você chegará lá! 🚀
 
 
 ---
