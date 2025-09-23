@@ -26,5 +26,6 @@ jobs:
           feedback-type: "ai"
           openai_key: ${{ secrets.ENGINE }}
           redis_url: ${{ secrets.REDIS_URL }}
+          
           redis_token: ${{ secrets.REDIS_NAME }}
           
