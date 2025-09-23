@@ -1,1 +1,1 @@
-An unexpected error occurred during the grading process: 'WebDevTemplate' object has no attribute 'quota'
+An unexpected error occurred during the grading process: BaseReporter.__init__() missing 1 required positional argument: 'template'
