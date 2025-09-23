@@ -1,44 +1,33 @@
 # Relatório de Desempenho - Portal de Notícias Dinâmico
-<sup>Este é um feedback gerado por IA e pode conter erros. Você tem <autograder.builder.template_library.templates.web_dev.WebDevTemplate object at 0x7f2e9bff8f10> créditos restantes.</sup>
+<sup>Este é um feedback gerado por IA e pode conter erros. Você tem <autograder.builder.template_library.templates.web_dev.WebDevTemplate object at 0x7f63b0c1cee0> créditos restantes.</sup>
 
 Olá, **ArthurCRodrigues**! Aqui está um feedback detalhado sobre sua atividade.
 > **Nota Final:** **`68.38 / 100`**
 ---
-# Feedback do Código
+# Feedback sobre o seu código
 
-Olá! Acabei de revisar o seu código e gostaria de parabenizá-lo pelo trabalho feito até agora! 👏 Você fez um ótimo trabalho ao implementar a funcionalidade de carregar dinamicamente as notícias na página principal e os detalhes da notícia em uma página separada. Isso é uma parte fundamental do projeto e você fez isso muito bem!
+Olá! Parabéns pelo seu trabalho até agora. Você já fez muitas partes importantes do projeto corretamente. Vamos abordar alguns pontos que precisam de ajustes e melhorias. Não se preocupe, você está indo muito bem! 😊
 
-Agora, vamos abordar alguns pontos que precisam de atenção. Não se preocupe, estou aqui para ajudar!
+## Pontos positivos
 
-## Pontos a serem melhorados
+- Você fez um ótimo trabalho ao criar a estrutura de dados em `app.js` e garantir que cada item tenha um 'id'. Isso é fundamental para identificar cada notícia de maneira única. 👏
+- Fiquei bastante impressionado com a maneira como você lidou com a manipulação do DOM para renderizar dinamicamente os cards de notícia na página inicial. Isso é uma habilidade valiosa e você a fez muito bem! 🎉
+- Você fez um bom trabalho ao criar links em cada card que apontam para `detalhes.html` com o 'id' do item na query string. Isso é uma prática muito boa para permitir que a página de detalhes saiba qual notícia exibir. 👍
+- Excelente trabalho ao usar `URLSearchParams` para ler o 'id' da URL na página de detalhes e encontrar a notícia correspondente na estrutura de dados. Isso é exatamente o que era necessário para essa parte do projeto. 🌟
+- A sua utilização do atributo `alt` em todas as imagens é uma excelente prática de acessibilidade. Mantenha o bom trabalho! 🥇
 
-1. **Tags `<article>`**: O teste de validação apontou que você não está usando a quantidade necessária de tags `<article>`. No seu código, você está usando apenas duas tags `<article>`, uma para cada página. O teste espera pelo menos quatro. Isso pode ser facilmente resolvido adicionando mais tags `<article>` na sua página. Lembre-se que a tag `<article>` é usada para encapsular um conteúdo independente dentro de um documento.
+## Pontos a melhorar
 
-2. **Tags `<img>`**: O teste de validação também apontou que você não está usando a quantidade necessária de tags `<img>`. No seu código, você não está usando nenhuma tag `<img>`. O teste espera pelo menos cinco. Você pode solucionar isso adicionando tags `<img>` para as imagens das notícias tanto na página inicial quanto na página de detalhes.
+- A sua aplicação não passou em alguns testes porque o sistema de testes esperava encontrar certos elementos HTML ou classes CSS que são específicos do Bootstrap, um framework CSS. No entanto, o projeto especifica que o uso de frameworks como Bootstrap, React, Vue ou Angular é proibido. Portanto, você pode ignorar esses testes falhados. No futuro, certifique-se de ler atentamente os requisitos do projeto para evitar confusões. 😊
+- A aplicação está utilizando muitos seletores de ID no CSS. Embora isso não seja necessariamente um problema, é uma boa prática usar classes em vez de IDs para estilização, pois os IDs têm uma especificidade muito alta e podem tornar a manutenção do CSS mais difícil no futuro. Tente refatorar o CSS para usar mais classes e menos IDs. 🎨
+- Parece que o diretório 'imgs' não existe ou está vazio. Verifique se o diretório foi carregado corretamente ou se o nome está correto. As imagens são uma parte importante de qualquer site e é essencial que sejam carregadas corretamente. 🖼️
 
-3. **Links internos**: O teste de validação mostrou que você não está usando links internos em seu projeto. Os links internos são importantes para a navegação do usuário no site. Você pode adicionar links internos usando a tag `<a>` com o atributo `href` apontando para a página interna desejada.
+## Recursos para aprendizado
 
-4. **Classe CSS**: O teste de validação indicou que algumas classes CSS esperadas não estão presentes no seu projeto. Certifique-se de usar as classes CSS corretas para estilizar os elementos do seu site. 
+- Como você fez um excelente trabalho ao manipular o DOM para criar conteúdo dinâmico, acho que você pode se interessar por [este guia](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction) para aprender ainda mais sobre o assunto.
+- Você também pode achar útil este [tutorial sobre como usar URLSearchParams](https://developer.mozilla.org/pt-BR/docs/Web/API/URLSearchParams) para ler parâmetros da query string da URL. É uma habilidade muito útil para dominar!
 
-5. **Uso de ID**: O teste de validação apontou um excesso de uso de seletores de ID no seu CSS. O uso excessivo de seletores de ID pode tornar o seu CSS difícil de gerenciar e não é uma boa prática. Tente usar classes em vez de IDs sempre que possível.
-
-6. **Diretório 'imgs' não encontrado**: O teste de validação indicou que o diretório 'imgs' não existe. Certifique-se de que você tenha criado este diretório e que ele contém todas as imagens que você pretende usar no seu site.
-
-## Boas práticas
-
-Você fez um excelente trabalho garantindo que todas as imagens tenham o atributo 'alt'. Isso é essencial para a acessibilidade do site e é uma ótima prática! 👍
-
-Também aprecio o fato de que você forneceu detalhes completos nas tags `<head>` de suas páginas HTML. Isso é muito importante para a otimização de mecanismos de busca (SEO) e para fornecer informações relevantes ao navegador.
-
-Para melhorar ainda mais, aqui estão alguns recursos úteis que você pode consultar:
-
-- [Manipulação do DOM (Document Object Model)](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-- [Como usar URLSearchParams para ler parâmetros da query string da URL](https://developer.mozilla.org/pt-BR/docs/Web/API/URLSearchParams)
-- [Trabalhando com a estrutura de dados JSON em JavaScript](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
-- [Como usar o atributo 'alt' em imagens para acessibilidade](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img)
-
-Espero que essas sugestões sejam úteis! Continue trabalhando duro e você chegará lá! 🚀
-
+Lembre-se, a prática leva à perfeição. Continue codificando e explorando diferentes maneiras de resolver problemas. Você está indo muito bem! 💪😊
 
 ---
 
