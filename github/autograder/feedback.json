@@ -1,0 +1,59 @@
+{
+  "general": {
+    "report_title": "Relatório de Desempenho - Portal de Notícias Dinâmico",
+    "show_score": true,
+    "show_passed_tests": true,
+    "add_report_summary": true,
+    "online_content": [
+     {
+        "url": "https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction",
+        "description": "Guia sobre Manipulação do DOM (Document Object Model) para criar conteúdo dinâmico.",
+        "linked_tests": [
+          "js_uses_dom_manipulation"
+        ]
+      },
+      {
+        "url": "https://developer.mozilla.org/pt-BR/docs/Web/API/URLSearchParams",
+        "description": "Tutorial sobre como usar URLSearchParams para ler parâmetros da query string da URL.",
+        "linked_tests": [
+          "js_uses_query_string_parsing",
+          "link_points_to_page_with_query_param"
+        ]
+      },
+      {
+        "url": "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON",
+        "description": "Aprenda a trabalhar com a estrutura de dados JSON em JavaScript.",
+        "linked_tests": [
+          "js_has_json_array_with_id"
+        ]
+      },
+      {
+        "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img",
+        "description": "Guia completo sobre como usar o atributo 'alt' em imagens para acessibilidade.",
+        "linked_tests": [
+          "check_all_images_have_alt"
+        ]
+      }
+    ]
+  },
+  "ai": {
+    "provide_solutions": "hint",
+    "feedback_tone": "amigável, encorajador e direto ao ponto",
+    "feedback_persona": "Code Buddy, um colega programador mais experiente que está me ajudando a melhorar",
+    "assignment_context": "O objetivo desta atividade é criar um portal de notícias com duas páginas: uma home (`index.html`) que exibe uma lista de notícias em formato de 'cards', e uma página de detalhes (`detalhes.html`) que mostra o conteúdo completo de uma notícia. Todo o conteúdo deve ser carregado dinamicamente a partir de uma estrutura de dados (array de objetos) no ficheiro `app.js`. É proibido o uso de frameworks como React, Vue ou Angular.",
+    "extra_orientations": "Por favor, foque a análise nos seguintes pontos: 1. A correta implementação da estrutura de dados em `app.js`, garantindo que cada item possua um 'id'. 2. A renderização dinâmica dos cards na `index.html` usando manipulação do DOM. 3. A criação de links em cada card que apontem para `detalhes.html` com o 'id' do item na query string (ex: `detalhes.html?id=1`). 4. A capacidade da página `detalhes.html` de ler o 'id' da URL, encontrar o item correspondente na estrutura de dados e exibir suas informações. 5. Verificar se nenhum framework de JavaScript foi utilizado.",
+    "submission_files_to_read": [
+      "index.html",
+      "detalhes.html",
+      "css/styles.css",
+      "app.js"
+    ]
+  },
+  "default": {
+    "category_headers": {
+      "base": "✅ Requisitos Essenciais",
+      "bonus": "⭐ Pontos Extras e Boas Práticas",
+      "penalty": "🚨 Pontos de Atenção e Más Práticas"
+    }
+  }
+}
