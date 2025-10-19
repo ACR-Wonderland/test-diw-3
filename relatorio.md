@@ -2,36 +2,52 @@
 <sup>Este é um feedback gerado por IA e pode conter erros. Você tem 9 créditos restantes.</sup>
 
 Olá, **ArthurCRodrigues**! Aqui está um feedback detalhado sobre sua atividade.
-> **Nota Final:** **`68.38 / 100`**
+> **Nota Final:** **`68.62 / 100`**
 ---
-# Feedback sobre a Atividade de Portal de Notícias
+# Feedback do Code Review
 
-Olá! Parabéns pelo trabalho feito até agora no seu projeto de Portal de Notícias. Você fez um bom trabalho na implementação da estrutura de dados em `app.js` e na renderização dinâmica dos cards na `index.html`. Também percebi que você fez um bom uso dos elementos semânticos do HTML e suas tags `meta` estão bem configuradas, o que é excelente para SEO. Além disso, todas as suas imagens têm o atributo `alt`, o que é uma ótima prática de acessibilidade. 👍
+Olá! Parabéns pelo seu trabalho no portal de notícias. Você fez um ótimo trabalho ao implementar a estrutura de dados em `app.js` e ao renderizar dinamicamente os cards na `index.html` usando manipulação do DOM. Essas são habilidades muito importantes em desenvolvimento web e você as aplicou bem aqui. 
 
-Porém, alguns testes falharam e eu gostaria de te ajudar a entender por que e como resolver essas questões:
+Vamos falar agora sobre algumas áreas de melhoria e como podemos resolver os problemas que foram encontrados.
 
-- **Tags `article` e `img` faltantes**: O teste está esperando encontrar um número específico dessas tags, mas não conseguiu. Certifique-se de que você está usando a quantidade necessária dessas tags e que elas estão bem estruturadas. 
-- **Links internos para `article`**: Parece que há uma falta de links apontando para tags `article`. Verifique se você criou esses links corretamente.
-- **Uso de unidades relativas no CSS**: O teste não encontrou nenhuma unidade relativa (em, rem, %, vh, vw) no seu CSS. Essas unidades são importantes para tornar o site responsivo e adaptável a diferentes tamanhos de tela e dispositivos.
-- **Links para o Bootstrap**: O teste está procurando por links para o CSS ou JS do Bootstrap, mas não encontrou nenhum. Como a atividade não permite o uso de frameworks, você pode ignorar esse erro.
-- **Links internos**: O teste não encontrou nenhum link interno válido. Verifique se você está usando âncoras corretamente para criar links internos.
-- **Classes CSS do Bootstrap**: O teste está procurando por várias classes CSS específicas do Bootstrap (`row`, `col-*`, `text-center`, `d-flex`, `d-*-flex`, `bg-*`), mas não encontrou nenhuma. Novamente, como a atividade não permite o uso de frameworks, você pode ignorar esses erros.
-- **Links para `detalhes.html` com o parâmetro de consulta 'id'**: O teste não encontrou nenhum link válido para 'detalhes.html' com o parâmetro de consulta 'id'. Verifique se você está criando esses links corretamente.
+## Pontos de Atenção
 
-Além disso, houve algumas más práticas detectadas:
+### HTML
 
-- **Uso excessivo de seletores de ID**: O teste detectou um número excessivo de seletores de ID. Tente usar classes em vez de IDs sempre que possível, pois as classes são mais reutilizáveis e flexíveis.
-- **Tag `script` proibida**: O teste encontrou uma tag `script` em seu HTML. Como a atividade proíbe o uso de JavaScript inline, certifique-se de que todo o seu JavaScript está em um arquivo externo.
-- **Diretório 'imgs' não encontrado**: O teste não encontrou o diretório 'imgs'. Verifique se você criou esse diretório e se ele contém todas as imagens necessárias.
+- Parece que você esqueceu de incluir um elemento `<article>` em suas páginas. Lembre-se de que eles são importantes para a semântica e acessibilidade do seu site. Você pode, por exemplo, envolver todo o conteúdo de cada notícia em um elemento `<article>`.
 
-Para ajudar a resolver esses problemas, sugiro que você consulte os seguintes recursos de aprendizagem:
+- Seus cards de notícia não possuem imagens. Adicione a tag `<img>` com o atributo `src` apontando para o URL da imagem. Lembre-se também de incluir um atributo `alt` para descrever a imagem, isso é muito importante para a acessibilidade.
 
-- [Guia sobre Manipulação do DOM (Document Object Model) para criar conteúdo dinâmico.](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-- [Tutorial sobre como usar URLSearchParams para ler parâmetros da query string da URL.](https://developer.mozilla.org/pt-BR/docs/Web/API/URLSearchParams)
-- [Aprenda a trabalhar com a estrutura de dados JSON em JavaScript.](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
-- [Guia completo sobre como usar o atributo 'alt' em imagens para acessibilidade.](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img)
+- Faltam links internos em seu site. Você pode adicionar um link de volta para a página inicial em `detalhes.html`. Além disso, cada card na página inicial deve ter um link para a página de detalhes, com o ID da notícia na query string.
 
-Espero que este feedback ajude você a melhorar seu projeto. Lembre-se, a prática leva à perfeição. Continue codando! 😊
+### CSS
+
+- Seu CSS não está usando medidas relativas, como `em`, `rem`, `%`, `vh`, `vw`. Essas unidades são fundamentais para garantir que seu site seja responsivo e funcione bem em diferentes tamanhos de tela.
+
+- Parece que há uma confusão sobre o uso do Bootstrap. No enunciado do projeto, foi solicitado que não fosse usado nenhum framework, então não se preocupe com a falta do Bootstrap em seu projeto.
+
+### JavaScript
+
+- Ótimo trabalho ao usar a manipulação do DOM para adicionar conteúdo dinamicamente às suas páginas! No entanto, você precisa garantir que cada link nos cards da página inicial aponte para `detalhes.html` com o ID da notícia na query string.
+
+### Outros
+
+- Você usou muitos seletores de ID em seu CSS. Embora os IDs sejam úteis, eles têm uma especificidade muito alta e podem tornar seu CSS difícil de gerenciar. Tente usar classes em vez de IDs sempre que possível.
+
+- A tag `<script>` foi encontrada em seu projeto. Como o objetivo era construir o site sem usar frameworks de JavaScript, essa tag não deveria ser usada.
+
+- O diretório 'imgs' que você está referenciando em seu código JavaScript não existe. Certifique-se de que todas as imagens que você está tentando carregar estejam em um diretório existente.
+
+## Recursos de Aprendizagem
+
+Aqui estão alguns recursos que podem te ajudar a melhorar seu projeto:
+
+- [Manipulação do DOM (Document Object Model) para criar conteúdo dinâmico](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
+- [Tutorial sobre como usar URLSearchParams para ler parâmetros da query string da URL](https://developer.mozilla.org/pt-BR/docs/Web/API/URLSearchParams)
+- [Aprenda a trabalhar com a estrutura de dados JSON em JavaScript](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
+- [Guia completo sobre como usar o atributo 'alt' em imagens para acessibilidade](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img)
+
+Continue trabalhando duro e melhorando suas habilidades! Você está indo muito bem. Se você tiver alguma dúvida, não hesite em perguntar. Estou aqui para ajudar! 😊
 
 
 ---
