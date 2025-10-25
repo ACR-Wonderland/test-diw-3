@@ -23,7 +23,7 @@ jobs:
         uses: webtech-network/autograder@v5
         with: 
           template_preset : "web dev"
-          feedback-type: "ai"
+          feedback-type: "default"
           openai_key: ${{ secrets.ENGINE }}
           redis_url: ${{ secrets.REDIS_URL }}
           
