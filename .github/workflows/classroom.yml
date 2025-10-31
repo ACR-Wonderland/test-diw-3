@@ -20,7 +20,7 @@ jobs:
            path: submission
 
       - name: Check repository criteria 
-        uses: webtech-network/autograder@v5
+        uses: webtech-network/autograder@v1
         with: 
           template_preset : "web dev"
           feedback-type: "default"
