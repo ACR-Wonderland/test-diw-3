@@ -1,1 +1,1 @@
-An unexpected error occurred during the grading process: Reporter.create_default_reporter() missing 1 required positional argument: 'template'
+An unexpected error occurred during the grading process: Template 'web dev' not found.
