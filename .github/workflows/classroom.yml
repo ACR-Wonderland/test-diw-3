@@ -1,4 +1,4 @@
-name: Autograderr
+name: Autograder
 on:
   push:
     branches:
@@ -19,7 +19,7 @@ jobs:
         with:
            path: submission
 
-      - name: Check repository criteria 
+      - name: Run Autograder
         uses: webtech-network/autograder@v1
         with: 
           template_preset : "web dev"
