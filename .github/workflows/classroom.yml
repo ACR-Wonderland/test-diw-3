@@ -22,7 +22,7 @@ jobs:
       - name: Run Autograder
         uses: webtech-network/autograder@v1
         with: 
-          template_preset : "web dev"
+          template_preset : "webdev"
           feedback-type: "default"
           openai_key: ${{ secrets.ENGINE }}
           redis_url: ${{ secrets.REDIS_URL }}
