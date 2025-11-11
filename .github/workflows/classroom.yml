@@ -2,10 +2,10 @@ name: Autograder
 on:
   push:
     branches:
-      - main
+      - testing/include_feedback
   pull_request:
     branches:
-      - main
+      - testing/include_feedback
   workflow_dispatch:
 
 jobs:
