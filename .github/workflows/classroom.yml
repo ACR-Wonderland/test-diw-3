@@ -12,20 +12,19 @@ jobs:
   grading:
     permissions: write-all
     runs-on: ubuntu-latest
-    if: github.actor != 'github-classroom[bot]' 
+    if: github.actor != 'github-classroom[bot]'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-           path: submission
+          path: submission
 
-      - name: Run Autograder
-        uses: webtech-network/autograder@v1
-        with: 
-          template_preset : "webdev"
+      - name: Run Autograder (v2)
+        uses: webtech-network/autograder@v2
+        with:
+          template_preset: "webdev"         
           feedback-type: "default"
+          include-feedback: "false"       
           openai_key: ${{ secrets.ENGINE }}
           redis_url: ${{ secrets.REDIS_URL }}
-          
           redis_token: ${{ secrets.REDIS_NAME }}
-          
