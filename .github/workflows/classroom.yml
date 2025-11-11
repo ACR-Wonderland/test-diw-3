@@ -24,7 +24,7 @@ jobs:
         with:
           template_preset: "webdev"         
           feedback-type: "default"
-          include-feedback: "false"       
+          include-feedback: "true"       
           openai_key: ${{ secrets.ENGINE }}
           redis_url: ${{ secrets.REDIS_URL }}
           redis_token: ${{ secrets.REDIS_NAME }}
