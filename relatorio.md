@@ -1,1 +1,1 @@
-An unexpected error occurred during the grading process: 'TestResult' object has no attribute 'parameters'
+An unexpected error occurred during the grading process: 'Result' object has no attribute 'penalty_results'
