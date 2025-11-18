@@ -1,7 +1,7 @@
 # Relatório de Desempenho - Portal de Notícias Dinâmico
 > **Nota Final:** **`68.62 / 100`**
 
-Olá, **matheusmra**! 👋
+Olá, **ArthurCRodrigues**! 👋
 
 Aqui está o feedback detalhado sobre sua atividade. Use este guia para entender seus acertos e os pontos que podem ser melhorados.
 
