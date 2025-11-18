@@ -1,5 +1,5 @@
 # Relatório de Desempenho - Portal de Notícias Dinâmico
-> **Nota Final:** **`68.62 / 100`**
+> **Nota Final:** **`71.38 / 100`**
 
 Olá, **ArthurCRodrigues**! 👋
 
@@ -8,35 +8,7 @@ Aqui está o feedback detalhado sobre sua atividade. Use este guia para entender
 ---
 
 ## ⭐ Pontos Extras e Boas Práticas
-Parabéns! Você completou os seguintes itens bônus, demonstrando um ótimo conhecimento:
-
-#### Tópico: Accessibility
-> ✅ **Passou** no teste `check_all_images_have_alt`
-> - **Detalhes:** Parabéns! Nenhuma imagem encontrada para verificar.
-
-
-#### Tópico: Head detail
-> ✅ **Passou** no teste `check_head_details` (Parâmetros: `detail_tag`: `title`)
-> - **Detalhes:** Parabéns! A tag `<title>` foi encontrada na seção `<head>`.
-
-> ✅ **Passou** no teste `check_head_details` (Parâmetros: `detail_tag`: `meta`)
-> - **Detalhes:** Parabéns! A tag `<meta>` foi encontrada na seção `<head>`.
-
-> ✅ **Passou** no teste `check_attribute_and_value` (Parâmetros: `tag`: `meta`, `attribute`: `charset`, `value`: `UTF-8`)
-> - **Detalhes:** Parabéns! Encontrada a tag `<meta>` com `charset='UTF-8'`.
-
-> ✅ **Passou** no teste `check_attribute_and_value` (Parâmetros: `tag`: `meta`, `attribute`: `name`, `value`: `viewport`)
-> - **Detalhes:** Parabéns! Encontrada a tag `<meta>` com `name='viewport'`.
-
-> ✅ **Passou** no teste `check_attribute_and_value` (Parâmetros: `tag`: `meta`, `attribute`: `name`, `value`: `description`)
-> - **Detalhes:** Parabéns! Encontrada a tag `<meta>` com `name='description'`.
-
-> ✅ **Passou** no teste `check_attribute_and_value` (Parâmetros: `tag`: `meta`, `attribute`: `name`, `value`: `author`)
-> - **Detalhes:** Parabéns! Encontrada a tag `<meta>` com `name='author'`.
-
-> ✅ **Passou** no teste `check_attribute_and_value` (Parâmetros: `tag`: `meta`, `attribute`: `name`, `value`: `keywords`)
-> - **Detalhes:** Parabéns! Encontrada a tag `<meta>` com `name='keywords'`.
-
+Nenhum item bônus foi completado desta vez. Continue se desafiando!
 
 ---
 
@@ -91,20 +63,7 @@ Encontramos alguns pontos nos requisitos essenciais que precisam de sua atençã
 ---
 
 ## 🚨 Pontos de Atenção e Más Práticas
-Foram detectadas algumas práticas que resultaram em penalidades. Veja os detalhes abaixo para entender como corrigi-las:
-
-#### Tópico: Html
-> ❌ **Falhou** no teste `check_id_selector_over_usage` (Parâmetros: `max_allowed`: `2`)
-> - **Detalhes:** Cuidado! 7 seletores de ID detectados (limite: 2).
-
-> ❌ **Falhou** no teste `has_forbidden_tag` (Parâmetros: `tag`: `script`)
-> - **Detalhes:** Cuidado! A tag `<script>` foi encontrada e é proibida.
-
-
-#### Tópico: Project structure
-> ❌ **Falhou** no teste `check_dir_exists` (Parâmetros: `dir_path`: `imgs`)
-> - **Detalhes:** Cuidado! O diretório 'imgs' não existe.
-
+Ótimo trabalho! Nenhuma má prática foi detectada no seu projeto.
 
 ---
 
@@ -123,9 +82,6 @@ Foram detectadas algumas práticas que resultaram em penalidades. Veja os detalh
 | Revisar | `bootstrap_fundamentals` | **Teste:** `has_class`<br>**O que foi verificado:** *Verifica a presença de classes CSS específicas, com suporte a curingas, um número mínimo de vezes.*<br>**Parâmetros:** <sub>`class_names`: `['d-flex', 'd-*-flex']`, `required_count`: `1`</sub> |
 | Revisar | `bootstrap_fundamentals` | **Teste:** `has_class`<br>**O que foi verificado:** *Verifica a presença de classes CSS específicas, com suporte a curingas, um número mínimo de vezes.*<br>**Parâmetros:** <sub>`class_names`: `['bg-*']`, `required_count`: `1`</sub> |
 | Revisar | `linking_and_integrity` | **Teste:** `link_points_to_page_with_query_param`<br>**O que foi verificado:** *Verifica a existência de tags âncora que levam a uma página específica com um parâmetro de query string obrigatório.*<br>**Parâmetros:** <sub>`target_page`: `detalhes.html`, `query_param`: `id`, `required_count`: `3`</sub> |
-| Corrigir (Penalidade) | `html` | **Teste:** `check_id_selector_over_usage`<br>**O que foi verificado:** *Conta o número de seletores de ID usados e penaliza se exceder o máximo permitido.*<br>**Parâmetros:** <sub>`max_allowed`: `2`</sub> |
-| Corrigir (Penalidade) | `html` | **Teste:** `has_forbidden_tag`<br>**O que foi verificado:** *Verifica a presença de uma tag HTML proibida.*<br>**Parâmetros:** <sub>`tag`: `script`</sub> |
-| Corrigir (Penalidade) | `project_structure` | **Teste:** `check_dir_exists`<br>**O que foi verificado:** *Verifica se um diretório específico existe no envio.*<br>**Parâmetros:** <sub>`dir_path`: `imgs`</sub> |
 
 ---
 > Continue praticando e melhorando seu código. Cada desafio é uma oportunidade de aprender! 🚀
