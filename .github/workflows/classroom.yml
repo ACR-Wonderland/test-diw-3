@@ -20,7 +20,7 @@ jobs:
            path: submission
 
       - name: Run Autograder
-        uses: webtech-network/autograder@v1
+        uses: webtech-network/autograder@v2
         with: 
           template_preset : "webdev"
           feedback-type: "default"
